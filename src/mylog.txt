@@ -1,0 +1,16 @@
+my_function called with args: (1, 2), kwargs:{}. Result: 3
+my_function called with args: (1, 0), kwargs:{}. Result: 1
+my_function error: unsupported operand type(s) for +: 'int' and 'str'. Inputs:(1, 'f'), {}
+
+my_function ok
+my_function error: can only concatenate str (not "int") to str. Inputs:('h', 2), {}
+my_function error: can only concatenate str (not "int") to str. Inputs:('h', 2), {}
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function start - 00:00:00 
+my_function ok 
+my_function stop - 00:00:00
