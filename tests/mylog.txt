@@ -1,0 +1,10 @@
+my_function called with args: (1, 2), kwargs:{}. Result: 3
+
+my_function ok
+my_function ok
+my_function start - 00:00:00 
+my_function ok 
+my_function stop - 00:00:00
+my_function start - 00:00:00 
+my_function ok 
+my_function stop - 00:00:00
