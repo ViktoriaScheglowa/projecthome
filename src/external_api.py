@@ -11,9 +11,9 @@ load_dotenv()
 api_key = os.getenv("API_KEY")
 
 
-def convert_to_rub(amount: float, currency: str) -> Any:
+def convert_to_rub(amount: float, currency: str) -> float:
     """Функция принимает значение в долларах или евро, обращается к API и возвращает конвертацию в рубли"""
-    url = f"https://api.apilayer.com/exchangerates_data/convert?to=RUB&from=USD&amount={amount}"
+    url = f"https://api.apilayer.com/exchangerates_data/convert{amount}"
     headers = {"apikey": api_key}
     response = requests.get(url, headers=headers)
     if response.status_code != 200:
