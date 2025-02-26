@@ -3,6 +3,24 @@ from typing import Any
 
 from src.external_api import convert_to_rub
 
+import requests
+import logging
+
+
+logging.basicConfig(
+    filename='utils.log',
+    filemode='w',
+    format='%(asctime)s %(name)s %(Levelname)s:%(message)s')
+
+
+logger = logging.getLogger('utils')
+logger.setLevel(logging.INFO)
+file_handler = logging.FileHandler('utils.log')
+file_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s: %(message)s')
+file_handler.setFormatter(file_formatter)
+logger.addHandler(file_handler)
+
+
 def get_transactions_dictionary(path: str) -> Any:
     """Принимает путь до JSON-файла и возвращает список словарей с данными о финансовых транзакциях"""
     try:
